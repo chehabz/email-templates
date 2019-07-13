@@ -1,0 +1,26 @@
+<html>
+  <head></head>
+  <body>
+    <h1>$title</h1>
+    <div>
+        <span>Thank You $customer.name for your order find the summary below</span>
+    </div>
+    <div>
+      <ul>
+        <li>#</li>
+        <li></li>
+        $.data.orders : {
+            <li>$it.id</li>
+            <li>$it.description</li>
+            <li>$it.qty</li>
+            <li>$it.price</li>
+            <li>$it.total</li>
+        }
+        </ul>
+    </div>
+    
+    <div>
+      <h2>Payment was done by credit card visa ...</h2>
+    </div>
+  </body>
+</html>
