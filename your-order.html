@@ -1,1 +1,53 @@
-$title
+<html>
+  <head>
+    <style>
+      ul{
+          list-style:none;
+        }
+
+        ul li{
+          float:left;
+          padding:10px;
+          border-bottom:1px solid #000;
+          border-right:1px solid #000;
+        }
+
+        ul li:nth-child(3n){
+          background-color:#888;
+        }
+
+        ul li:nth-child(3n+1){
+          clear:both;
+          border-left:1px solid #000;
+          background-color:#ccc;
+        }
+
+        ul li:nth-child(-n+3){
+          border-top:1px solid #000;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>$title$</h1>
+    <div>
+        <span>Thank You $customer.name$ for your order find the summary below</span>
+    </div>
+    <div>
+      <ul>
+        <li>#</li>
+        <li></li>
+        $.data.orders : {
+            <li>$it.id$</li>
+            <li>$it.description$</li>
+            <li>$it.qty$</li>
+            <li>$it.price$</li>
+            <li>$it.total$</li>
+        }$
+        </ul>
+    </div>
+    
+    <div>
+      <h2>Payment was done by credit card visa ...</h2>
+    </div>
+  </body>
+</html>
