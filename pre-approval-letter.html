@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$title$</title>
+    <style></style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo right"></div>
+        <div class="heading left">
+            <h1>Your payment to {}</h1>
+            <p>Here's the {} payment details</p>
+        </div>
+        <div class="heading right">
+            <p class="text-bold">Fatima Jasim Fahad</p><br/>
+            <p class="text-small">Villa 3, Nad Al Sheba, Dubai, UAE, P O Box 1999</p>
+        </div>
+    </div>
+    <div class="beneficiary-container">
+        <div class="col-left">
+            <h3>Beneficiary</h3>
+            <div class="beneficiary-details">
+                <img src="/">
+                <h2>Marwa Shehi</h2>
+                <p>Street 146, Barsha, Dubai, P O Box 1993</p>
+            </div>
+            <div class="beneficiary-bank-details">
+                <img src="/">
+                <h2>Standard Chartered Bank</h2>
+                <p>**********1993</p>
+            </div>
+        </div>
+        <div class="col-right">
+            <div class="payment-amount">
+                <h3>Payment amount</h3>
+                <img src="/"> <h2>AED 2,000.00</h2>
+            </div>
+            <div class="payment-activity">
+                <h3>Date</h3>
+                <p class="text-bold">09 January 2021</p>
+                <span class="label-blue">Payment confirmed</span>
+            </div>
+        </div>
+    </div>
+    <div class="payment-breakdown">
+        <h3>Payment breakdown</h3>
+        <table>
+            <tr>
+                <td>Transfer number</td>
+                <td>$transferNumber$</td>
+            </tr>
+            <tr>
+                <td>Reference number (OTT)</td>
+                <td>{OTT}</td>
+            </tr>
+            <tr>
+                <td>From account or IBAN</td>
+                <td>{IBAN}</td>
+            </tr>
+            <tr>
+                <td>Payment type</td>
+                <td>{paymentType}</td>
+            </tr>
+            <tr>
+                <td>Exchange rate</td>
+                <td>{exchangeRate}</td>
+            </tr>
+            <tr>
+                <td>Charges<br/><span class="subline"><img src='/'>Fatima will pay all transaction charges</span></td>
+                <td>{chargesCurrency} {chargesAmount}</td>
+            </tr>
+            <tr>
+                <td>Total debit amount<br/><span class="subline"><img src='/'>Inclusive of all charges</span></td>
+                <td>{debitAmountCurrency} {debitAmount}</td>
+            </tr>    
+        </table>
+    </div>
+    <div class="marketing-banner">
+        <div class="col-left">
+            <h2>Check your statements instantly with the CBD app</h2>
+            <a href=""><img src="/"></a><a href=""><img src="/"></a>
+        </div>
+        <div class="col-right">
+            <img src="/">
+        </div>
+    </div>
+    <div class="footer">
+        <span class="text-xsmall">All remittances are processed subject to our Terms & Conditions. This is a system generated advice - no signatures required.</span>
+        <ul>
+            <li class="text-bold">Al Ittihad St., Port Saeed, Dubai, UAE</li>
+            <li class="text-bold">+ (971) 600 575 556</li>
+            <li class="text-bold"><a href="https://www.cbd.ae">www.cbd.ae</a></li>
+        </ul>
+    </div>
+</body>
+</html>
